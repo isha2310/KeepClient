@@ -1,5 +1,8 @@
 @import '../../theme.scss';
 
+.home{
+    min-height: 100vh;
+}
 .note{
     margin-top: 3vh;
     border: 3px solid $primary;

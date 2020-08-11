@@ -204,7 +204,7 @@ const Home = () => {
     }
 
     return (
-        <div>
+        <div className="home" >
             <Navbar setOpen={setOpen} setKeeps={setKeeps} />
             <div className="note-container" >
                 <div className="note" >
