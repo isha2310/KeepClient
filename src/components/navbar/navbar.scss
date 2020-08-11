@@ -1,0 +1,27 @@
+@import '../../theme.scss';
+
+.nav{
+    height: 6vh;
+    background-color: $primary;
+    padding: 0.4vh;
+}
+.nav-title{
+    display: flex;
+    float: left;
+    padding-left: 5vw;
+    align-items: flex-start;
+    p{
+        font-size: 1.6em;
+        margin: 0.4vh;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+}
+.logout{
+    float: right;
+    padding-right: 5vw;
+
+    &:hover{
+        cursor: pointer;
+        color: #4e4242;
+    }
+}

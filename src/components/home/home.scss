@@ -1,0 +1,163 @@
+@import '../../theme.scss';
+
+.note{
+    margin-top: 3vh;
+    border: 3px solid $primary;
+    width: 40vw;
+    margin-left: 28vw;
+    padding: 1.1em;
+    border-radius: 10px;
+    height: 20vh;
+
+    @media screen and (max-width:500px) {
+        width: 70vw;
+        margin-left: 8vw;
+        height: 16vh;
+        padding-bottom: 1.3em;
+    }
+    .title{
+       width: 95%;
+        border: none;
+        height: 3vh;
+        padding: 1%;
+        margin-bottom: 2vh;
+        background: none;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: $bg;
+    }
+    .note-body{
+        width: 95%;
+        padding: 1%;
+        border: none;
+        height: 10vh;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-color: $bg;
+    }    
+    input:focus, textarea:focus{
+        outline: 1px solid $primary;
+        background-color: $bg;
+    }
+    .btn{
+        background: lighten($color: $primary, $amount: 10%);
+        color: white;
+        border: none;
+        padding: 1% 2%;
+        margin-top: 2.5%;
+
+        @media screen and (max-width:500px) {
+            margin-top: 0%;
+        }
+
+        &:hover, &:active{
+            background-color: darken($color: $primary, $amount: 30%);
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+.avatar{
+    height: 20vh;
+    width: 20vw;
+    border-radius: 50%;
+    margin-bottom: 1vh;
+}
+.loading{
+    margin-top: 3%;
+    margin-left: 25vw;
+}
+.no-keep{
+    opacity: 0.5;
+    margin-top: 4%;
+}
+.avatar2{
+    height: 25vh;
+    width: 10vw;
+    border-radius: 30%;
+    opacity: 0.85;
+    margin-bottom: 1vh;
+    &:hover{
+        cursor: pointer;
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+}
+.modal{
+    width: 30vw;
+    text-align: center;
+
+    h3{
+        color: $primary;
+        font-size: 1.5em;
+        margin-bottom: 0.5vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    input{
+        text-align: center;
+        margin: 3%;
+        width: 25vw;
+        padding: 2%;
+        border:none;
+        font-size: 1em;
+        background-color: none;
+        background: darken($color: $grey, $amount: 70%);
+        border-radius: 5px;
+        color: $grey;
+    }
+    p{  
+        width: 12vw;
+        font-size: 1em;
+        font-weight: 600;
+        margin-left: 9vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    span{
+        padding-left: 3px;
+    }
+    p:hover{
+       cursor: pointer; 
+       color: $primary;
+    }
+    .home-btn{
+        cursor: pointer;
+        padding: 2%;
+        width: 26.5vw;
+        margin-top: 2%;
+        color: white;
+        background: lighten($color: $primary, $amount: 5%);
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: none;
+        border-radius: 5px;
+        &:hover, &:focus{
+            background-color: darken($color: $primary, $amount: 10%);
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+@media screen and (max-width:500px){
+    .modal{
+        width: 70vw;
+        input{
+            margin-top: 2vh;
+            width: 50vw;
+        }
+        h3{
+            font-size: 1.3em;
+        }
+        .home-btn{
+            width: 52vw;
+        }
+        p{
+            width: 70%;
+            color: $primary;
+        }
+    }
+    .avatar2{
+        height: 20vh;
+        width: 20vh;
+        opacity: 1;
+    }
+    .avatar{
+        height: 20vh;
+        width: 40vw;
+    }
+}

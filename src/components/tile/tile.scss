@@ -1,0 +1,77 @@
+@import '../../theme.scss';
+
+.tile{
+    width: 35vw;
+    border: 2px solid $primary;
+    border-radius: 7px;
+    margin: 2% 0%;
+    margin-left: 31vw;
+    padding: 0%;
+    height: auto;
+    text-align: left;
+    padding-left: 2vw;
+
+    @media screen and (max-width: 500px){
+        width: 70vw;
+        margin: 4% 0%;
+        margin-left: 12vw;
+    }
+    .s1{
+        margin-left: 80%;
+        opacity: 0.7;
+        @media screen and (max-width: 340px){
+            margin-left: 70%;
+        }
+    }
+    .s2{
+        padding-left: 0.5%;
+        opacity: 0.7;
+    }
+
+    .s1:hover, .s2:hover{
+        opacity: 1;
+    }
+}
+.tile-note{
+    width: 40vw;
+    height: auto;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    input, textarea{
+        width: 30vw;
+        padding: 2%;
+        margin: 3% 3%;
+        border: none;
+    }
+    input:focus, textarea:focus{
+        outline: 1px solid $primary;
+    }
+    button{
+        margin-left: 17vw;
+        padding: 1% 5%;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: $primary;
+        border: none;
+        color: white;
+
+        &:hover{
+            background-color: darken($color: $primary, $amount: 10%);
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .tile-note{
+        width: 60vw;
+    
+        input{
+            width: 46vw;
+        } 
+        textarea{
+            width: 48vw;
+        }
+        button{
+            margin-left: 25vw;
+        }
+    }
+}
