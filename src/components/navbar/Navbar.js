@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import ExitToAppIcon from '@material-ui/icons/ExitToApp'
 import EmojiObjectsTwoToneIcon from '@material-ui/icons/EmojiObjectsTwoTone'
 import {signout} from '../../apiCalls/auth'

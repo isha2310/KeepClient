@@ -16,7 +16,7 @@ const Tile = (props) => {
     useEffect(() => {
         setTitle(props.keep.title)
         setNote(props.keep.note)
-    },[])
+    },[props.keep.title, props.keep.note])
 
     const  onOpenModal = () => {
         setOpen(true)

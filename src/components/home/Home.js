@@ -37,6 +37,7 @@ const Home = () => {
  
     useEffect(() => {
         setOpen(true)
+        setNoteError(false)
         if(localStorage.getItem('username') !== null) {
             setExistingUser(JSON.parse(localStorage.getItem('username')))
         }   
